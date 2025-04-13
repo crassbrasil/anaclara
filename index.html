@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ajude Maria Clara</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Ajude Maria Clara</h1>
+    <img src="https://i.postimg.cc/SR1LD8ZV/50-off-1.jpg" alt="Imagem principal" class="main-img" />
+
+    <p class="desc">Mesmo sozinhas estamos batalhando para a vida digna!</p>
+
+    <div class="progress-area">
+      <div class="progress-bar">
+        <div class="progress-fill" id="progressFill" style="width: 42%;">42%</div>
+      </div>
+      <p class="goal">R$ 36.460 de R$ 86.900</p>
+      <p class="donors">132 pessoas já doaram 💖</p>
+    </div>
+
+    <button class="cta-button" onclick="scrollToSection('doar')">Doar Agora</button>
+
+    <section class="exams">
+      <img src="https://i.postimg.cc/SR1LD8ZV/50-off-1.jpg" alt="Exame 1" />
+      <img src="https://i.postimg.cc/SR1LD8ZV/50-off-1.jpg" alt="Exame 2" />
+    </section>
+
+    <p class="extra-info">Você receberá: atualização</p>
+
+    <section id="doar" class="donate-section">
+      <h2>✨ DOAÇÃO DUPLICADA! ✨</h2>
+      <p class="highlight">Doações a partir de R$50 serão multiplicadas por 2 pelos nossos patrocinadores e grupo de empresários que apoiam nossa campanha! Sua ajuda vale o dobro até 25/04.</p>
+      
+      <p class="select-text">Clique no valor que deseja doar</p>
+      <div class="donate-options">
+        <button onclick="gerarPix(20)">R$ 20</button>
+        <button onclick="gerarPix(50)">R$ 50</button>
+        <button onclick="gerarPix(100)">R$ 100</button>
+      </div>
+
+      <div id="pixInfo" class="pix-popup">
+        <img id="qrCode" src="" alt="QR Code Pix" />
+        <textarea id="pixCode" readonly></textarea>
+        <button onclick="copiarPix()">Copiar Pix</button>
+      </div>
+    </section>
+
+    <footer>
+      <p>Você receberá: atualização</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
